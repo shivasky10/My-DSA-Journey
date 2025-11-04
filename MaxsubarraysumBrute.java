@@ -1,7 +1,7 @@
 
 //Bruteforce approach
 
-public class SubarraymaxBrute {
+public class MaxsubarraysumBrute {
 
       public static void maxsubarraysum(int number[]){
         int currsum =0;
