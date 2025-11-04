@@ -5,8 +5,12 @@ public class Maxsubarraykadenes {
     public static void kadenes(int number[]){
         int cs=0;
         int ms=Integer.MIN_VALUE;
+        int n=Integer.MAX_VALUE;
 
         for(int i=0;i<number.length;i++){
+            if(number[i]<0){
+                n=Math.min(number[i],n);
+            }
             cs=cs+number[i];
             if(cs<0){
                 cs=0;
@@ -17,6 +21,7 @@ public class Maxsubarraykadenes {
         }
 
         System.out.println("maxsubarray sum is :"+ms);
+        System.out.println("smallest negative :"+n);
     }
     public static void main(String[] args) {
         int number[]={-2,-3,4,-1,-2,1,5,-3};
