@@ -16,7 +16,7 @@
             for(int i=0;i<number.length;i++){
                 for(int j=i;j<number.length;j++){
                     currsum = i==0 ? prefix[j] : prefix[j]- prefix[i-1];
-
+                    
                     if(currsum >maxsum){
                     maxsum = currsum;
                     }
@@ -28,7 +28,7 @@
         }
 
         public static void main(String[] args) {
-            int number[]={2,6,14,5};
+            int number[]={-2,-3,4,-1,-2,1,5,-3};
             prefixsum(number);
         }
     }
