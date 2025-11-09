@@ -1,4 +1,6 @@
+package Arrays;
 //Trapping rain water - Q42-leetcode-hard
+
 
 public class TrappingRainwater {
 
