@@ -44,7 +44,7 @@ public class Abstraction {
         h.walk();
         h.eat();
         System.out.println(h.color);//base class initialisation color
-        System.out.println(h.changecolor());
+        System.out.println(h.changecolor()); // after derived class change 
 
         
         // chicken c= new chicken();
