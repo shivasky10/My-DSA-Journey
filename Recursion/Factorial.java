@@ -1,0 +1,29 @@
+package Recursion;
+
+public class Factorial {
+
+    public static int fact(int n){
+        if(n==0){
+            return 1;
+        }
+
+        // int fnm1=fact(n-1);
+        int fn = n * fact(n-1);
+        return fn;
+    }
+
+
+    public static int sum(int s){
+        if(s==1){
+            return 1;
+        }
+
+        int sum=s+sum(s-1);
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(fact(5));
+        System.out.println(sum(5));
+    }
+}
